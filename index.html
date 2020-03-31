@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="public/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <title>Welcome to Roku Flashback!</title>
+</head>
+<body>
+    <!-- this is the header and nav -->
+    <header>
+        <img src="public/images/roku.svg" alt="Roku Logo">
+    </header>
+
+    <main>
+        <!-- landing section area -->
+        <section id="landing">
+            <h1>Welcome to Roku Flashback!</h1>
+            <p>Enjoy old school classics you can’t find anywhere else!</p>
+            <button><a href="signup.html">Sign Up</a></button>
+        </section>
+
+        <!-- this is the main content section -->
+        <section id="browse">
+            <h2>Browse Media</h2>
+
+            <div class="mediaCon">
+                <h3>MOVIES</h3>
+                <img src="public/images/goodfellas.png" alt="Good Fellas Cover">
+                <h4>Good Fellas</h4>
+                <button>Play Now</button>
+            </div>
+
+            <div class="mediaCon">
+                <h3>TV SHOWS</h3>
+                <img src="public/images/mash.png" alt="Mash Cover">
+                <h4>Mash</h4>
+                <button>Play Now</button>
+            </div>
+
+            <div class="mediaCon">
+                <h3>MUSIC</h3>
+                <img src="public/images/thriller.png" alt="Thriller Cover">
+                <h4>Thriller</h4>
+                <button>Play Now</button>
+            </div>
+                
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2020 All Rights Reserved, Graham Vickers</p>
+    </footer>
+    
+    <!-- Accessibility Code Script link -->
+    <script>
+    (function(doc, head, body){
+        window.interdeal = {
+            sitekey  : "9efd1cc4f570fd620cc5ef3ce870e07d",
+            Position : "Left",
+            Menulang : "EN",
+            btnStyle : {
+                vPosition : ["50%", undefined],
+                scale : [0.7, 0.7],
+                icon : {
+                        type : 11,
+                        shape : "semicircle",
+                        outline : false
+                    },
+                color : {
+                    main : "#5663eb",
+                    second : "#ffffff"
+                }
+            }
+        };
+        var coreCall             = doc.createElement('script');
+        coreCall.src             = 'https://cdn.equalweb.com/core/2.0.7/accessibility.js';
+        coreCall.defer           = true;
+        coreCall.integrity       = 'sha512-I5mpAzD33VLeDeg+yaCpP8hPXDSn/9JoRrA/mrWZyqyQXtgpW9W4RvZOx5E0FxQydYR3lpdwIbQm+o4lGYoQ8A==';
+        coreCall.crossOrigin     = 'anonymous';
+        coreCall.setAttribute('data-cfasync', true );
+        
+        body? body.appendChild(coreCall) : head.appendChild(coreCall);
+    })(document, document.head, document.body);
+    </script>
+</body>
+</html>
