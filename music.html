@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="public/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <title>Welcome to Roku Flashback!</title>
+</head>
+<body>
+    <!-- this is the header and nav -->
+    <header id="mainHeader">
+        <a href="index.html"><img src="public/images/roku.svg" alt="Roku Logo"></a>
+        <a href="index.html"><img src="public/images/home.svg" alt="Home Button" id="home"></a>
+    </header>
+
+    <main>
+
+        <!-- this is the main content section -->
+        <section id="browse">
+            <h2>Browse Music</h2>
+
+            <div class="mediaCon">
+                <h4>Thriller - By Micheal Jackson</h4>
+                <img src="public/images/thriller.png" alt="Thriller Cover">
+                <video src="public/video/thriller.mp4" width="320px" controls></video>
+                <div id="vidButton">
+                    <a href="#">LYRICS</a>
+                    <a href="#">PLAY</a>
+                </div>
+            </div>
+                
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2020 All Rights Reserved, Graham Vickers</p>
+    </footer>
+    
+    <!-- Accessibility Code Script link -->
+    <script>
+    (function(doc, head, body){
+        window.interdeal = {
+            sitekey  : "9efd1cc4f570fd620cc5ef3ce870e07d",
+            Position : "Left",
+            Menulang : "EN",
+            btnStyle : {
+                vPosition : ["50%", undefined],
+                scale : [0.7, 0.7],
+                icon : {
+                        type : 11,
+                        shape : "semicircle",
+                        outline : false
+                    },
+                color : {
+                    main : "#5663eb",
+                    second : "#ffffff"
+                }
+            }
+        };
+        var coreCall             = doc.createElement('script');
+        coreCall.src             = 'https://cdn.equalweb.com/core/2.0.7/accessibility.js';
+        coreCall.defer           = true;
+        coreCall.integrity       = 'sha512-I5mpAzD33VLeDeg+yaCpP8hPXDSn/9JoRrA/mrWZyqyQXtgpW9W4RvZOx5E0FxQydYR3lpdwIbQm+o4lGYoQ8A==';
+        coreCall.crossOrigin     = 'anonymous';
+        coreCall.setAttribute('data-cfasync', true );
+        
+        body? body.appendChild(coreCall) : head.appendChild(coreCall);
+    })(document, document.head, document.body);
+    </script>
+</body>
+</html>
