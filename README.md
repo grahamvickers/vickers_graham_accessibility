@@ -4,9 +4,6 @@
 
 This is a Roku style flashback app that was designed and made to better my understanding of accessability in web application, this is in conjunction with my program Interactive Media Design at Fanshawe College. 
 
-This site is host on Heroku (subject to change)
-* [VIEW LIVE SITE]()
-
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
@@ -28,6 +25,10 @@ These instructions will get you a copy of the project up and running on your loc
 * Safari - 100%
 * IE - Unknown
 
+## Issues
+
+* The Equal Web tool doesn't work locally, it must be hosted first to work.
+* Heroku hosting issue
 
 ## Authors
 
