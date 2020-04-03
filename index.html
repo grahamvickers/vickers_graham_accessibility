@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="public/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-    <title>Welcome to Roku Flashback!</title>
+    <title>ROKU Flashback | Accessability</title>
 </head>
 <body>
     <!-- this is the header and nav -->
-    <header>
-        <img src="public/images/roku.svg" alt="Roku Logo">
+    <header id="mainHeader">
+        <a href="index.html"><img src="public/images/roku.svg" alt="Roku Logo"></a>
+        <a href="index.html"><img src="public/images/home.svg" alt="Home Button" id="home"></a>
     </header>
 
     <main>
@@ -19,32 +20,30 @@
         <section id="landing">
             <h1>Welcome to Roku Flashback!</h1>
             <p>Enjoy old school classics you can’t find anywhere else!</p>
-            <button><a href="signup.html">Sign Up</a></button>
+            <a id="signUp" href="#">Sign Up</a>
         </section>
 
         <!-- this is the main content section -->
         <section id="browse">
             <h2>Browse Media</h2>
 
-            <div class="mediaCon">
-                <h3>MOVIES</h3>
-                <img src="public/images/goodfellas.png" alt="Good Fellas Cover">
-                <h4>Good Fellas</h4>
-                <button>Play Now</button>
-            </div>
-
-            <div class="mediaCon">
-                <h3>TV SHOWS</h3>
-                <img src="public/images/mash.png" alt="Mash Cover">
-                <h4>Mash</h4>
-                <button>Play Now</button>
-            </div>
-
-            <div class="mediaCon">
-                <h3>MUSIC</h3>
-                <img src="public/images/thriller.png" alt="Thriller Cover">
-                <h4>Thriller</h4>
-                <button>Play Now</button>
+            <div id="buttons">
+                <div class="mediaCon">
+                    <h3>MOVIES</h3>
+                    <a href="movies.html"><img src="public/images/movies.svg" alt="Movies Icon"></a>
+    
+                </div>
+    
+                <div class="mediaCon">
+                    <h3>TV SHOWS</h3>
+                    <a href="shows.html"><img src="public/images/shows.svg" alt="TV Shows Icon"></a>
+    
+                </div>
+    
+                <div class="mediaCon">
+                    <h3>MUSIC</h3>
+                    <a href="music.html"><img src="public/images/music.svg" alt="Music Icon"></a>
+                </div>
             </div>
                 
         </section>
